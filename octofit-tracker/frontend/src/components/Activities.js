@@ -5,10 +5,10 @@ const Activities = () => {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://orange-space-parakeet-755pg74g4gw24r6-8000.app.github.dev/api/activities')
+    fetch('https://orange-space-parakeet-755pg74g4gw24r6-8000.app.github.dev/api/leaderboard')
       .then(response => response.json())
       .then(data => setActivities(data))
-      .catch(error => console.error('Error fetching activities:', error));
+      .catch(error => console.error('Error fetching leaderboard:', error));
   }, []);
 
   return (

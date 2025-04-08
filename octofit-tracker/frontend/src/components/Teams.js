@@ -19,6 +19,7 @@ const Teams = () => {
           <tr>
             <th>ID</th>
             <th>Name</th>
+            <th>Members</th>
           </tr>
         </thead>
         <tbody>
@@ -26,6 +27,7 @@ const Teams = () => {
             <tr key={team.id}>
               <td>{team.id}</td>
               <td>{team.name}</td>
+              <td>{team.members}</td>
             </tr>
           ))}
         </tbody>

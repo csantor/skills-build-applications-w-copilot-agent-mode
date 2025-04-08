@@ -12,24 +12,14 @@ class TeamSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class ActivitySerializer(serializers.ModelSerializer):
-    id = serializers.SerializerMethodField()
-
     class Meta:
         model = Activity
         fields = '__all__'
 
-    def get_id(self, obj):
-        return str(obj.id)
-
 class LeaderboardSerializer(serializers.ModelSerializer):
-    id = serializers.SerializerMethodField()
-
     class Meta:
         model = Leaderboard
         fields = '__all__'
-
-    def get_id(self, obj):
-        return str(obj.id)
 
 class WorkoutSerializer(serializers.ModelSerializer):
     class Meta:
