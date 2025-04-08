@@ -14,8 +14,8 @@ const Activities = () => {
   return (
     <div className="container mt-4">
       <h1 className="text-center mb-4">Activities</h1>
-      <table className="table table-striped">
-        <thead>
+      <table className="table table-striped table-hover">
+        <thead className="table-dark">
           <tr>
             <th>ID</th>
             <th>Name</th>

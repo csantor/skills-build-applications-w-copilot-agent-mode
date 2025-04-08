@@ -14,8 +14,8 @@ const Leaderboard = () => {
   return (
     <div className="container mt-4">
       <h1 className="text-center mb-4">Leaderboard</h1>
-      <table className="table table-bordered">
-        <thead className="thead-dark">
+      <table className="table table-striped table-hover">
+        <thead className="table-dark">
           <tr>
             <th>Rank</th>
             <th>Name</th>
