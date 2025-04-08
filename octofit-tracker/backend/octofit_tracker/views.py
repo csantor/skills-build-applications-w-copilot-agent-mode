@@ -31,6 +31,9 @@ class LeaderboardViewSet(viewsets.ModelViewSet):
     queryset = Leaderboard.objects.all()
     serializer_class = LeaderboardSerializer
 
+    # def get_queryset(self):
+    #     return Leaderboard.objects.all().annotate(id=models.F('_id'))
+
 class WorkoutViewSet(viewsets.ModelViewSet):
     queryset = Workout.objects.all()
     serializer_class = WorkoutSerializer
